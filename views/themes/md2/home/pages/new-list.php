@@ -1,0 +1,49 @@
+<?php
+use yii\web\View;
+
+/**
+ * @var $this \yii\web\View
+ */
+$this->title = '名医主刀入选50强榜单';
+$source = \Yii::$app->request->get('app', 1);
+$urlResImage = $this->theme->baseUrl . "/images/";
+$this->params['show_footer'] = false;
+?>
+<article id="newList_article" class="active" data-scroll="true">
+    <div class="pl10 pr10 text-justify">
+        <div class="text-indent-2 mt20">
+            中国最具投资价值企业50强评选由清科集团发起，是投资界首个专注高成长企业的年度评选活动，自2006年发布以来，已成功举办十届，被誉为“行业投资风向标”。
+        </div>
+        <div class="text-indent-2 mt10">
+            2015年12月2日，在第六届中国高成长企业CEO峰会上，第十届“中国最具投资价值企业50强”评选榜单（以下简称V50榜单）正式发布。该榜自2006年以来，至今已举办十年之久，是投资界首个专注高成长企业的年度评选活动，被誉为“行业投资风向标”。与往届不同的是，本届“中国最具投资价值企业50强”榜单评选首次根据企业发展的不同阶段与规模，将企业榜细分为“新芽榜”和“风云榜”。
+        </div>
+        <div class="mt10">
+            <img src="http://static.mingyizhudao.com/146346335779897">
+        </div>
+        <div class="pb50"></div>
+        <div class="mt20 mb50 text-center hide">
+            <div class="grid color-white">
+                <div class="col-1"></div>
+                <div id="like" class="col-0 w90p addLike pt55">
+                    123
+                </div>
+                <div class="col-1">
+                </div>
+            </div>
+            <div class="mt5 color-black6 grid">
+                <div class="col-1"></div>
+                <div class="col-0 pl2">
+                    赞一下
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+</article>
+<script>
+    $(document).ready(function () {
+        $('#like').click(function () {
+            alert(123);
+        });
+    });
+</script>
